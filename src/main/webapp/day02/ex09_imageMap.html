@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Image Map</title>
+</head>
+<body>
+	<!-- 
+	이미지 맵 : 하나의 이미지 안에 여러 개의 a 링크를 설정하는 것
+			  사각형(rect), 원형(circle)의 영역을 설정
+ -->
+	<a href="jttps://www.naver.com"> <img alt="작업화면"
+		src="../images/img04.jpg" usemap="#i_map">
+	</a>
+	<map name="i_map">
+		<!-- 영역설정 : 사각형(시작x, y, 끝x, y) -->
+		<area title="구글" alt="" shape="rect" coords="35, 45, 274, 347" href="https://www.google.com">
+		<!-- 영역설정 : 원형(원의 중심x, y, 반지름) -->
+		<area title="다음" alt="" shape="circle" coords="335, 295, 43" href="https://daum.net">
+	</map>
+
+</body>
+</html>

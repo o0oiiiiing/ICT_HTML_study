@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Link : a태그</title>
+</head>
+<body>
+<!-- 
+	a : 링크 태그
+	<a href="url" target="value">텍스트</a>
+	- href = 이동할 페이지나 사이트의 주소, 만약에 #이면 현재문서를 뜻한다.
+	- target = "_blank" (새창)
+			   "_self(default, 자기자신)"
+			   "_parent(부모창)"
+			   "name(같은 페이지에 name을 지정한 위치)"
+ -->
+ <a href="https://www.naver.com">naver</a>
+ <a href="https://www.daum.net">daum</a>
+ <a href="https://www.google.com">google</a>
+ <hr>
+ <a href="https://www.naver.com" target="_blank">naver</a>
+ <a href="https://www.daum.net" target="_blank">daum</a>
+ <a href="https://www.google.com" target="_blank">google</a>
+ <hr>
+ 
+ <!-- 문서 연결 -->
+ <!-- 상대주소 : 자기 위치에서 -->
+ <a href="ex03_Color.html" target="_blank">문서1-1</a>
+ <a href="../day01/ex03_Paragraphs.html" target="_blank">문서1-2</a>
+ <!-- 절대주소 : '/'부터 시작 -->
+ <a href="/html/day02/ex01_TextFormatting.html" target="_blank">문서2</a>
+ <hr>
+ 
+ <h2>같은 문서에서 다른 위치로 이동하기 (name, target 이동)</h2>
+ <p><a href="#first">첫번째 섹터</a></p>
+ <p><a href="#second">두번째 섹터</a></p>
+ <p><a href="#third">세번째 섹터</a></p>
+ <br><br><br><br><br><br><br><br>
+ <a name="first">첫번째 단락</a>
+ <p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
+  <a name="second">두번째 단락</a>
+ <p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
+ <p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
+ <p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
+ <p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
+ <p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
+  <a name="third">세번째 단락</a>
+ <p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
+  <a href="#">해당페이지 맨 위로 이동</a>
+</body>
+</html>

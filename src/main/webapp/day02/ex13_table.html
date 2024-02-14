@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>table - 합치기</title>
+<style type="text/css">
+table {
+	width: 60%;
+	background-color: LightYellow;
+}
+
+table, th, td {
+	border: 2px solid gray;
+	/* 표의 선을 한줄로 만들기 */
+	border-collapse: collapse;
+}
+/* table 자체를 가운데 정렬 일단 너비가 있어야 됨 */
+table {
+	margin: 0px auto;
+}
+/* 글자 가운데 정렬 */
+td {
+	text-align: center;
+}
+
+td {
+	padding: 10px;
+}
+</style>
+</head>
+<body>
+	<!-- 
+	caption은 표의 설명 또는 제목, 보통은 위에 존재
+	style = caption-side: bottom; 를 주면 아래에 존재
+	
+	행 합치기 : rowspan="합쳐진 td 갯수", 위아래 합치기, 맨 위에서 합치기
+	열 합치기 : colspan="합쳐진 td 갯수", 좌우 합지기, 맨 왼쪽에서 합치기
+ -->
+
+	<table>
+		<caption>인재개발원 숙소</caption>
+		<thead>
+			<tr style="background-color: LightGray">
+				<th>방이름</th>
+				<th>대상</th>
+				<th>크기</th>
+				<th>가격</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>유채방</td>
+				<td>여성</td>
+				<td rowspan="3">4인실</td>
+				<td rowspan="4">1인 20,000원</td>
+			</tr>
+			<tr>
+				<td rowspan="2">동백방</td>
+				<td>동성</td>
+			</tr>
+			<tr>
+				<td>가족</td>
+			</tr>
+			<tr>
+				<td>천행향방</td>
+				<td>누구나</td>
+				<td>2인실</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="4">3세까지는 무료</td>
+			</tr>
+		</tfoot>
+	</table>
+	<hr>
+
+	<table>
+		<thead>
+			<tr>
+				<th colspan="3">2022</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td rowspan="2" colspan="2">4</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td>9</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

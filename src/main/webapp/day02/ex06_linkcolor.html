@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>link colors</title>
+<style type="text/css">
+p {
+	font-size: 20px;
+}
+
+a:link {
+	color: black;
+}
+
+a:visited {
+	color: Green;
+}
+
+a:active {
+	color: LightPink;
+}
+
+a:hover {
+	background-color: LightYellow;
+}
+
+a {
+	text-decoration: none;
+}
+</style>
+</head>
+<body>
+	<!-- 
+	*한번도 방문한 적이 없는 사이트나 문서 : 밑줄, blue
+	*한번이라도 방문한 적이 있는 사이트나 문서 : 밑줄, purple
+	*이동하기 위해서 마우스로 눌렀을 때: 밑줄, red
+	
+	a 태그 속성을 변경할 때 사용
+	a:link → 일반적인 링크 속성 지정(변경)
+	a:visited → 방문한 적이 있는 링크 속성 지정(변경)
+	a:active → 클릭한 상태의 링크 속성 지정(변경)
+	a:hover → 마우스 해당 영역에 올렸을 때 속성 지정(변경)
+	
+	** text-decoration : none; (링크의 밑줄 삭제)
+-->
+	<p>
+		<a href="ex01_TextFormatting.html">문서</a>
+	</p>
+
+</body>
+</html>

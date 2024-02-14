@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>색상 : Color</title>
+</head>
+<body>
+<!-- 
+1. color names : 색상이름을 사용해서 색 지정
+   https://www.w3schools.com/colors/colors_names.asp
+2. style 속성 : 배경색, 글자색, 테두리는 선두께, 선종류, 선색을 같이 사용한다
+ -->
+<p>이것은 배경색, 글자색, 테두리색을 지정하는 색상 표현이다.</p>
+<p style="background-color: LightPink">이것은 배경색, 글자색, 테두리색을 지정하는 색상 표현이다.</p>
+<p style="color: LightCoral">이것은 배경색, 글자색, 테두리색을 지정하는 색상 표현이다.</p>
+<p style="border: tomato 2px ">이것은 배경색, 글자색, 테두리색을 지정하는 색상 표현이다. (없음)</p>
+<p style="border: LightSalmon solid ">이것은 배경색, 글자색, 테두리색을 지정하는 색상 표현이다. (실선)</p>
+<p style="border: LightSalmon solid 1px">이것은 배경색, 글자색, 테두리색을 지정하는 색상 표현이다. (실선)</p>
+<p style="border: LightSalmon dotted 1px">이것은 배경색, 글자색, 테두리색을 지정하는 색상 표현이다. (점선)</p>
+<p style="border: LightSalmon dashed 1px">이것은 배경색, 글자색, 테두리색을 지정하는 색상 표현이다. (박음질)</p>
+<p style="border: LightSalmon double 3px">이것은 배경색, 글자색, 테두리색을 지정하는 색상 표현이다. (2중실선)</p>
+<hr>
+<!-- 
+2. RGB(red, green, blue), RGBA(red, green, blue, alpha(투명도))
+   각 자리에 가중치 0~255 숫자로 표현, 투명도 0.0~1.0
+ -->
+<p>이것은 RGB 색상 표현이다.</p>
+<p style="background-color: rgb(255, 0, 0);">이것은 RGB 색상 표현이다.</p>
+<p style="background-color: rgb(255, 255, 0);">이것은 RGB 색상 표현이다.</p>
+<p style="background-color: rgba(255, 0, 0, 0.0);">이것은 RGBA 색상 표현이다.</p>
+<p style="background-color: rgba(255, 0, 0, 0.5);">이것은 RGBA 색상 표현이다.</p>
+<p style="background-color: rgba(255, 0, 0, 1.0);">이것은 RGBA 색상 표현이다.</p>
+<hr>
+<!-- 
+3. HEX(rr, gg, bb), RGBA(rr, gg, bb, aa(투명도))
+   각 자리에 가중치 16진수 (0~9,a,b,c,d,e,f)로 표현
+ -->
+<p>이것은 HEX 색상 표현이다</p>
+<p style="background-color: #ffff00;">이것은 HEX 색상 표현이다</p>
+<p style="background-color: #0000ff;">이것은 HEX 색상 표현이다</p>
+<p style="background-color: #ffff0000;">이것은 HEXA 색상 표현이다</p>
+<p style="background-color: #ffff0088;">이것은 HEXA 색상 표현이다</p>
+<p style="background-color: #ffff00ff;">이것은 HEXA 색상 표현이다</p>
+</body>
+</html>

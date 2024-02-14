@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>table</title>
+<style type="text/css">
+table {
+	width: 60%;
+}
+
+table, th, td {
+	border: 2px solid gray;
+	/* 표의 선을 한줄로 만들기 */
+	border-collapse: collapse;
+}
+/* table 자체를 가운데 정렬 일단 너비가 있어야 됨 */
+table {
+	margin: 0px auto;
+}
+/* 글자 가운데 정렬 */
+td {
+	text-align: center;
+}
+
+th, td {
+	padding: 10px;
+}
+/* :nth-child => 형제 목록에서 요소 선택 */
+/* tr : 수평, td : 수직 */
+/* odd(홀수), even(짝수) */
+tr:nth-child(odd) {
+	background-color: #d6eeee;
+}
+tr:nth-child(even) {
+	background-color: lightyellow;
+}
+tr:nth-child(3) {
+	background-color: lightgray;
+}
+</style>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Points</th>
+			</tr>
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Points</th>
+			</tr>
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Points</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Peter</td>
+				<td>Griffin</td>
+				<td>$100</td>
+			</tr>
+			<tr>
+				<td>Lois</td>
+				<td>Griffin</td>
+				<td>$150</td>
+			</tr>
+			<tr>
+				<td>Joe</td>
+				<td>Swanson</td>
+				<td>$300</td>
+			</tr>
+			<tr>
+				<td>Cleveland</td>
+				<td>Griffin</td>
+				<td>$250</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
