@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>다른 페이지를 가져오는 iframe</title>
+</head>
+<body>
+	<!-- 
+	웹 페이지 내에서 다른 웹 페이지를 표시할 때 사용
+	<iframe stc="위치"></iframe>
+	속성 : width, height, style="border"
+	target과 name을 이용할 수도 있다.
+ -->
+
+	<h2>여기는 ex08_iframes 문서 입니다.</h2>
+	<p>iframe 태그는 다른 웹 페이지를 가져올 수 있습니다.</p>
+	<p>
+		<iframe src="ex03_ul_menu.html"></iframe>
+	</p>
+	<p>
+		<iframe src="ex03_ul_menu.html" width="800px"></iframe>
+	</p>
+	<p style="background-color: lightblue;">
+		<iframe src="ex03_ul_menu.html" width="800px" height="180px"
+			style="border: none;"></iframe>
+	</p>
+	<hr>
+	<p>
+		<iframe src="ex03_ul_menu.html" width="800px" height="180px"
+			style="border: none;" name="doc04"></iframe>
+	</p>
+	<p>
+		<a href="ex04_exam01.html" target="doc04">문서04</a><a
+			href="ex01_table.html" target="doc04">문서01</a>
+	</p>
+	<hr>
+
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>list : ol, ul, dl</title>
+</head>
+<body>
+	<!-- 
+	ol : 순서가 있는 리스트
+	ul : 순서가 없는 리스트
+	dl : 정의 목록, 사전이나 정의 문구에 사용
+	
+	ul과 ol 태그 안에는 li태그(항목)가 존재
+	ul : 스타일은 disc(기본), circle, square, none
+	ol : 스타일은 
+	스타일 변걍 style="list-style-type:value";
+	dl 태그 안에는 dt(제목), dd(설명)이 존재
+ -->
+
+	<ul>
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+	<hr>
+
+	<ul style="list-style-type: square;">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+	<hr>
+
+	<ul style="list-style-type: lower-alpha;">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+	<hr>
+
+	<ul style="list-style-type: square;">
+		<li>Coffee</li>
+		<ul>
+			<li>Americano
+				<ul style="list-style-type: none;">
+					<li>tall</li>
+					<li>venti</li>
+					<li>grande</li>
+				</ul>
+			</li>
+			<li>Cappuchino
+				<ul>
+					<li>tall</li>
+					<li>venti</li>
+					<li>grande</li>
+				</ul>
+			</li>
+		</ul>
+		</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+	<hr>
+
+	<ol style="list-style-type: upper-roman;">
+		<li>Coffee</li>
+		<ol style="list-style-type: disc">
+			<li>따뜻한 커피</li>
+			<ol>
+				<li>작은 사이즈</li>
+				<li>중간 사이즈</li>
+				<li>큰 사이즈</li>
+			</ol>
+			<li>차가운 커피</li>
+		</ol>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+	<hr>
+
+	<dl>
+		<dt>키보드</dt>
+		<dd>표준 입력 장치</dd>
+
+		<dt>모니터</dt>
+		<dd>표준 출력 장치</dd>
+	</dl>
+
+</body>
+</html>

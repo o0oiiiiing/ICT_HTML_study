@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>html-js</title>
+<script type="text/javascript">
+	function setMsg() {
+		document.getElementById('memo3').innerHTML = Date();
+	}
+	function setMsg2() {
+		document.getElementById('memo4').style.fontSize="25px";
+		document.getElementById('memo4').style.color="tomato";
+		document.getElementById('memo4').style.backgroundColor="lightyellow";
+	}
+	function setMsg3() {
+		document.getElementById('memo4').style="none";
+	}
+	/* 해당 아이디의 속성 중 src 변경 */
+	function img_on() {
+		document.getElementById('img').src = "../images/img06_2.gif";
+	}
+	/* 해당 아이디의 속성 중 src 변경 */
+	function img_off() {
+		document.getElementById('img').src = "../images/img06_1.gif";
+	}
+</script>
+</head>
+<body>
+	<!-- 
+	javascript는 <script>태그에서 정의하고 사용된다.
+	head와 body 태그에 모두 사용 가능하다.
+	
+	태그 속성 중 onXXX() 속성은 javascript의 function()을 호출하는 것이다.
+ -->
+	<h2>자바 스크립트 사용</h2>
+	<p>자바 스크립트를 이용해서 html 텍스트 넣기</p>
+	<hr>
+	<p id="memo">Memo</p>
+	<script type="text/javascript">
+		document.getElementById("memo").innerHTML = "Hello JavaScript";
+	</script>
+	<hr>
+
+	<p id="memo2"></p>
+	<button onclick="document.getElementById('memo2').innerHTML = Date();">눌러주세요1</button>
+	<hr>
+
+	<p id="memo3"></p>
+	<button onclick="setMsg()">눌러주세요2</button>
+	<hr>
+
+	<!-- style 변경 -->
+	<p id="memo4">한국 ICT 인재 개발원</p>
+	<button onclick="setMsg2()">스타일 변경</button>
+	<button onclick="setMsg3()">원래대로</button>
+	<hr>
+
+	<!-- src 변경 -->
+	<img id="img" alt="" src="../images/img06_1.gif">
+	<button onclick="img_on()">켜기</button>
+	<button onclick="img_off()">끄기</button>
+
+</body>
+</html>
