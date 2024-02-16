@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Video, Audio</title>
+</head>
+<body>
+
+	<!-- 
+	controls : 컨트롤러 보이게
+	autoplay : 자동 실행
+	loop : 반복 실행
+	muted : 음소거, autoplay와 같이 사용해야 된다
+ -->
+	<video src="../multi/mov_bbb.mp4" controls autoplay muted></video>
+	<hr>
+
+	<video width="500" height="500" controls autoplay muted>
+		<source src="../multi/mov_bbb.mp4">
+	</video>
+	<hr>
+
+	<!-- audio 자동 실행 안됨 -->
+	<audio src="../multi/All.mp3" controls></audio>
+	<hr>
+
+	<audio controls>
+		<source src="../multi/All.mp3">
+	</audio>
+	<hr>
+
+	<!-- YouTube -->
+	<iframe width="420" height="315"
+		src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+	<hr>
+	<!-- 자동재생 :autoplay=1&mute=1  -->
+	<iframe width="420" height="315"
+		src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe>
+
+	<!-- 무한반복 : loop=1 -->
+	<iframe width="420" height="315"
+		src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1&loop=1"></iframe>
+</body>
+</html>
