@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#container {
+	width: 600px;
+	margin: 0px auto;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+li {
+	margin: 10px;
+}
+</style>
+</head>
+<body>
+	<div id="container">
+		<h1>레드향 주문하기</h1>
+		<form action="#" method="post">
+			<fieldset>
+				<legend>
+					<b>상품 선택</b>
+				</legend>
+				<p>
+					<b>주문할 상품을 선택해 주세요.</b>
+				</p>
+				<ul>
+					<li><label><input type="checkbox" value="s_3">선물용
+							3kg <input type="number" name="orders" min="1" max="5">개
+							<small>(최대 5개)</small> </label></li>
+					<li><label><input type="checkbox" value="s_5">선물용
+							5kg <input type="number" name="orders" min="1" max="3">개
+							<small>(최대 3개)</small> </label></li>
+					<li><label><input type="checkbox" value="h_3">가정용
+							3kg <input type="number" name="orders" min="1" max="5">개
+							<small>(최대 5개)</small> </label></li>
+					<li><label><input type="checkbox" value="h_5">가정용
+							5kg <input type="number" name="orders" min="1" max="3">개
+							<small>(최대 3개)</small> </label></li>
+				</ul>
+				<p>
+					<b>포장 선택</b>
+				</p>
+				<ul>
+					<li><label><input type="radio" name="packaging"
+							value="yes">선물 포장</label></li>
+					<li><label><input type="radio" name="packaging"
+							value="no">선물 포장 안 함</label></li>
+				</ul>
+
+			</fieldset>
+		</form>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#container {
+	width: 600px;
+	margin: 50px auto;
+}
+
+fieldset {
+	padding: 15px;
+}
+
+legend {
+	font-weight: bold;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+li {
+	margin: 10px;
+}
+
+li label {
+	width: 120px;
+	float: left;
+	text-align: left;
+}
+
+input[type="text"] {
+	width: 300px;
+	padding: 5px;
+}
+</style>
+</head>
+<body>
+	<div id="container">
+		<h1>레드향 주문하기</h1>
+		<form action="#" method="post">
+			<fieldset>
+				<legend>배송 정보</legend>
+				<ul>
+					<li><label for="uname"> 이름</label> <input type="text"
+						id="uname" name="uname"></li>
+					<li><label for="addr"> 배송 주소</label> <input type="text"
+						id="addr" name="addr"></li>
+					<li><label for="mail"> 이메일 </label><input type="text"
+						id="mail" name="mail"></li>
+					<li><label for="phone"> 연락처 </label><input type="text"
+						id="phone" name="phone"></li>
+					<li><label for="d_day"> 배송지정일</label> <input type="date"
+						id="d_day" name="d_day"> <small>(주문일로부터 최소 3일 이후)</small></li>
+					<li><label for="memo"> 메모</label> <textarea id="memo" rows="4"
+							cols="40"></textarea></li>
+				</ul>
+			</fieldset>
+		</form>
+	</div>
+
+
+
+</body>
+</html>
